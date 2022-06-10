@@ -1,45 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <body>
-        <main class="content">
-          <form method="POST" action="" enctype="multipart/form-data">
-            <fieldset>
-              <legend>Contato</legend>
-              <div>
-                <label for="nome">Nome: </label>
-                <input type="text" name="nome" id="nome" />
-              </div>
-              <label for="email">E-mail: </label>
-              <input type="email" name="email" required /><br />
-              <label for="sexo">Maculino</label>
-              <input type="radio" name="sexo" value="masc" /><br />
-              <label for="sexo">Feminino</label>
-              <input type="radio" name="sexo" value="femn" /><br />
-              <label for="cep">Estado/Cidade</label>
-              <select name ="cep" id="Estado" required>
-                <option></option>
-                <option value="1">Minas Gerais</option>
-                <option value="2">São Paulo</option>
-                <option value="3">Rio de Janeiro</option>
-              </select>
-                <input type="text" name="cep" id="cidade"/> <br>
-                <div> 
-                    <label for="arquivo">Selecione um arquivo</label>
-                    <input type="file" name="arquivo[]" multiple /><br />
-                </div>
-                <label for="sugestao">Sugestão</label> <br>
-                <textarea></textarea>
-                <button type="submit"><img src="document-arrow-upload-icon.png">
-                
-
-              
-         
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula de Web I</title>
+    <link rel="stylesheet" href="hamburger.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <input id="menu-toggle" type="checkbox" />
+        <label for="menu-toggle">
+          <div class="menu-hamburger">
+            <span class="hamburger"></span>
+          </div>
+        </label>
+        <ul>
+          <li>
+            <a href="form.html">Formulário</a>
+          </li>
+          <li>
+            <a href="tabela.html">Tabela</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="content">
+      <form method="POST" action="" enctype="multipart/form-data">
+        <fieldset>
+          <legend>Cadastro</legend>
+          <div>
+            <label for="id">Id:</label>
+            <input type="number" name="idescondido" value="199" readonly />
+          </div>
+          <div>
+            <label for="nome">Nome: </label>
+            <input type="text" name="nome" id="nome" />
+          </div>
+          <input type="checkbox" name="curso[]" value="info" id="info" />
+          <label for="info">Informática</label>
+          <br />
+          <input type="checkbox" name="curso[]" value="edif" id="edif" />
+          <label for="edif">Edificações</label><br />
+          <input type="checkbox" name="curso[]" value="meca" id="meca" />
+          <label for="meca">Mecatrônica</label><br />
+          <input type="color" name="cor" /><br />
+          <input type="date" name="data" /><br />
+          <input type="datetime-local" name="datahora" /><br />
+          <input type="email" name="email" required /><br />
+          <input type="file" name="arquivo[]" multiple /><br />
+          <input type="hidden" name="id" value="1" /><br />
+          <input type="image" src="./img/person.svg" /><br />
+          <input type="month" /><br />
+          <input type="number" /><br />
+          <input type="password" /><br />
+          <input type="radio" name="cursado" value="info" /><br />
+          <input type="radio" name="cursado" value="edif" /><br />
+          <input type="radio" name="cursado" value="meca" /><br />
+          <input type="range" name="slide" min="1" max="5" step="2" /><br />
+          <input type="search" required /><br />
+          <input type="tel" required /><br />
+          <input type="time" /><br />
+          <input type="url" required /><br />
+          <input type="week" /><br />
+          <label for="ano">Ano</label>
+          <select name="ano[]" id="ano" required multiple>
+            <option></option>
+            <option value="1">Primeiro ano</option>
+            <option value="2">Segundo ano</option>
+            <option value="3">Terceiro ano</option></select
+          ><br />
+          <button type="submit">Salvar</button>
+          <button type="reset">Limpar</button>
+        </fieldset>
+      </form>
+    </main>
+  </body>
 </html>
