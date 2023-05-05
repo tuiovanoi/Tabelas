@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <form action=""method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>formulario de casdrato</legend>
+    <label for="info">informatica</label>
+    <input type="checkbox" name="curso[]" id="info"> <br/>
+    <label for="meca">mecatronica</label>
+    <input type="checkbox" name="curso[]" id="meca"> <br/>
+    <input type="color" name="cor"> <br/>
+    <input type="date" name="data" required > <br/>
+<input type="datetime-local" name="datahora"> <br/>
+<input type="email" name="email"> <br/>
+<input type="file"name="file" > <br/>
+<input type="hidden" name="escondido"><br/>
+<input type="month" name="mes"><br/>
+<input type="number"name="numero" ><br/>
+<input type="password"name="senha"><br/>
+
+    <label for="ano"> 1 ano </label>
+    <input type="radio" name="ano" id="um" value="1"><br/>
+    <label for="ano"> 2 ano </label>
+    <input type="radio" name="ano" id="dois" value="2"><br/>
+    <label for="ano"> 3 ano </label>
+    <input type="radio" name="ano" id="tres" value="3"><br/>
+
+<input type="range" name="lista"><br/>
+<input type="search"name="busca"><br/>
+<input type="tel" name="telefone"><br/>
+<input type="text" name="texto" placeholder="João"><br/>
+
+<input type="time" name="hora"><br/>
+<input type="url" name="site"><br/>
+<input type="week" name="semana"><br/>
+
+<label for="sem">semestre</label>
+<select name="semestre" id="">
+    <option value=""></option>
+        <option value="1"> 1 semestre</option>
+        <option value="2"> 2 semestre</option>
+        <option value="3"> 3 semestre</option>
+        <option value="4"> 4 semestre</option>
+</select>
+    <button type="submit">enviar</button>
+    </form>
+</fieldset>
+</body>
+</html>

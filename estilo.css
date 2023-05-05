@@ -1,10 +1,8 @@
-table tr th,
-table tr td {
-	border: 0.3rem solid black;
-	padding: 2rem;
-	width: 2rem;
-}
 
-table {
-	border-collapse: collapse;
+table tr th, table tr td{
+    border: 0.2rem solid rgb(196, 166, 230);
+    padding: 2.0rem;
+}
+table{
+    border-collapse: collapse;
 }
